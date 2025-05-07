@@ -1,18 +1,24 @@
 
 
 
-function formatString(input : string, toUppper? : boolean) : string {
+function  formatString (input : string , toUppper? : boolean ) : string {
+
     if(toUppper || toUppper === undefined) {
-        return input.toUpperCase();
-    }else{
-      return input.toLowerCase();
+
+        return input.toUpperCase()
+
+    }else {
+      return input.toLowerCase()
     }
 } 
 
 
 
-function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[]    {
+function filterByRating(items: { title: string ; rating: number }[]) : { title : string ; rating : number }[]    { 
+
  return items.filter(item => item.rating > 4);
+
+
 }
 
 
@@ -20,12 +26,18 @@ function filterByRating(items: { title: string; rating: number }[]): { title: st
 
 
 
-function concatenateArrays<T>(...arrays: T[][]): T[] {
+function concatenateArrays <T> (...arrays: T[][]): T[] {
+
     const OutputArray  :  T[] =   [];
+
     for   (let i = 0; i < arrays.length; i++) {
+
         OutputArray.push(...arrays[i]);
+
     }
+
     return OutputArray;
+    
   }
 
 
