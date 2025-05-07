@@ -1,13 +1,13 @@
 
 Title : Understanding Interfaces vs TypeScript and Type Inference Explained.
 
-while woking with typescript two importent things we often use they are interfaces and types. They both let us discribe the shape of an object but they are not the same. let me expaling to you the deffrace bettween this two.             
+While working with typescript two important things we often use are interfaces and types. They both let us describe the shape of an object but they are not the same. Let me explain to you the difference between these two.             
 
 
 Interfaces vs Types in typescript?
 
 
-At first, interfaces and type aliases look like they are the same thing. that is because you can use both to tell typescript what an object should look like same kind of thing like copy of each other or a draing of the object.
+At first, interfaces and type aliases look like they are the same thing. That is because you can use both to tell typescript what an object should look like, the same kind of thing like a copy of each other or a drawing of the object.
 
 
 
@@ -17,7 +17,7 @@ You can use interface or type to say:
 
 
 
-But even though they look similar, they have some defferences when you use then for other thing like for example
+But even though they look similar, they have some differences when you use then for other thing like for example
 
 interface User { name: string; age: number; }
 
@@ -36,7 +36,7 @@ But Key Differences:
 
 
 
-Interfaces are made for extensibility so that you can extend an interface or even reopen it to and more properties latter.
+Interfaces are made for extensibility so that you can extend an interface or even reopen it to more properties later.
 
 Types are more static once declared, you can not add more properties to the same type name.
 
@@ -51,7 +51,7 @@ Extends vs Intersections:
 
 
 
-Interfaces use extends for inheritance.
+Interface use extends for inheritance.
 
 Types can achieve similar results with intersection types (&).
 
@@ -67,7 +67,7 @@ Use Cases:
 
 
 
-Interfaces are generally better for object oriented patterns or public APIs because of it's extendability.
+Interfaces are generally better for object oriented patterns or public APIs because of it's extensibility.
 
 Types are more effective when you need union types, primitives, tuples, or advanced type manipulation.
 
@@ -95,7 +95,7 @@ For example:
 
 
 let message = "HELLO WORLD";
-You do not need to tell typescript message is a string, but it knows it by looking at assined value. This is type interence in action.
+You do not need to tell typescript message is a string, but it knows it by looking at assigned value. This is type inference in action.
 
 Why is this helpful?
 
@@ -122,7 +122,7 @@ Safer Refactoring:
 
 
 
-If you later change the assignment for example assign a number, TypeScript will update the inferred type or raise a type error.
+If you later change the assignment for example to assign a number, TypeScript will update the inferred type or raise a type error.
 
 
 
@@ -142,3 +142,4 @@ Interfaces and types are helpful tools in TypeScript. Interfaces are good for ad
 Type inference helps keep your code neat and safe because TypeScript figures out the types for you. This way, you can think more about how your code works and less about writing the types.
 
 Whether you’re new or already know coding, learning these ideas will help you write better and safer TypeScript code!
+
