@@ -126,7 +126,59 @@ interface Product {
 
 
 
+  enum Day {
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+  }
+  
+  function getDayType(day: Day): string {
+    if (day === Day.Saturday || day === Day.Sunday) {
+        return 'Weekend' ;
+    
+    } else {
+        return 'Weekday';
+    }
+  }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  async function squareAsync(n: number): Promise<number> {
+
+    return new Promise((resolve , reject ) => {
+
+        if (n < 0 ) {
+            throw new Error ( "Negative number not allowed")
+        }
+
+        setTimeout(() => {
+            resolve (n * n) ;
+        } ,1000)
+
+    })
+  }
+
+
+
+
+
+
+  
 
 
 
